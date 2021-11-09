@@ -1,45 +1,36 @@
-let someString="marafone4t4t43t";
+let someString="sarafon";
 
 
-function showVerticalMessage(){
+function showVerticalMessage(obj){
 
-if(!someString){
-
-    console.log('ERROR');
-
-}else if(someString[0]==='m' ){
-
-  let newstring = someString[0].toUpperCase() + someString.slice(1);
-
-  newstring = newstring.slice(0,10);
-
-
-  for(let char of newstring) {
-    
-    console.log(char);
-    
-  } 
-
-}else {
-
- someString = someString.slice(0,10);
-
-  for( let char of someString){
-
-    console.log(char);
-
+  if(!obj){
+  
+      console.log('ERROR');
+  
+  }else if(obj[0]==='m' ){
+  
+    let newstring = obj[0].toUpperCase() + obj.slice(1);
+  
+    newstring = newstring.slice(0,10);
+  
+  
+    for(let char of newstring) {
+      
+      console.log(char);
+      
+    } 
+  
+  }else {
+  
+   obj = obj.slice(0,10);
+  
+    for( let char of obj){
+  
+      console.log(char);
+  
+    }
   }
-}
+  
+  }
 
-}
-
-
-  showVerticalMessage();
-
- 
- 
-
-
-
-
-
+  showVerticalMessage(someString);
